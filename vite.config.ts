@@ -27,8 +27,13 @@ export default defineConfig({
       }
     }
   },
-  plugins: [windi(), react(), viteEslint(),viteStylelint({
-    // 对某些文件排除检查
-    exclude: /windicss|node_modules|src\/index.css/
-  }),]
+  plugins: [
+    windi(),
+    react(),
+    viteEslint(),
+    viteStylelint({
+      // 对某些文件排除检查
+      exclude: /windicss|node_modules|src\/index.css/
+    })
+  ]
 });
